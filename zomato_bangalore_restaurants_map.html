@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fbcda5c63b36deb2c8b22e34563bd8ff {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fbcda5c63b36deb2c8b22e34563bd8ff" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fbcda5c63b36deb2c8b22e34563bd8ff = L.map(
+                "map_fbcda5c63b36deb2c8b22e34563bd8ff",
+                {
+                    center: [12.97, 77.59],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4215985e1ceb669a0718c5a958c1f552 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4215985e1ceb669a0718c5a958c1f552.addTo(map_fbcda5c63b36deb2c8b22e34563bd8ff);
+        
+    
+            var marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_49e2bae9c5b8569b920c5ff7be61f44a = L.circleMarker(
+                [12.8835602, 77.5140959],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_ed1c2bd77d320ad9417e6e9585519ea0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_75228a986bb160a5015cce41030450f8 = $(`<div id="html_75228a986bb160a5015cce41030450f8" style="width: 100.0%; height: 100.0%;">     <b>The Coffee Shack</b><br><br>     Rating: 4.2/5<br>     Cuisines: Cafe, Chinese, Continental, Italian<br>     Cost for 2: 500     </div>`)[0];
+                popup_ed1c2bd77d320ad9417e6e9585519ea0.setContent(html_75228a986bb160a5015cce41030450f8);
+            
+        
+
+        circle_marker_49e2bae9c5b8569b920c5ff7be61f44a.bindPopup(popup_ed1c2bd77d320ad9417e6e9585519ea0)
+        ;
+
+        
+    
+    
+            var circle_marker_b6fed557407088dc73263c956bb246b1 = L.circleMarker(
+                [12.9262671, 77.5610711],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_94430276255e51cbeaa2ba793bcce23e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fde983d4578c4903808106d65bed43a7 = $(`<div id="html_fde983d4578c4903808106d65bed43a7" style="width: 100.0%; height: 100.0%;">     <b>Hotboxit</b><br><br>     Rating: 3.8/5<br>     Cuisines: North Indian, Continental, Italian<br>     Cost for 2: 400     </div>`)[0];
+                popup_94430276255e51cbeaa2ba793bcce23e.setContent(html_fde983d4578c4903808106d65bed43a7);
+            
+        
+
+        circle_marker_b6fed557407088dc73263c956bb246b1.bindPopup(popup_94430276255e51cbeaa2ba793bcce23e)
+        ;
+
+        
+    
+    
+            var circle_marker_6ca2f5bf3f30af4d4902514bef6f756f = L.circleMarker(
+                [12.8787989, 77.5145602],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_56524f4902affe3259c7d441f8170299 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b7b7f2d96fa37b9a48db90699d0e74b6 = $(`<div id="html_b7b7f2d96fa37b9a48db90699d0e74b6" style="width: 100.0%; height: 100.0%;">     <b>LSD Cafe</b><br><br>     Rating: 2.9/5<br>     Cuisines: Chinese, Continental, Italian, North Indian<br>     Cost for 2: 700     </div>`)[0];
+                popup_56524f4902affe3259c7d441f8170299.setContent(html_b7b7f2d96fa37b9a48db90699d0e74b6);
+            
+        
+
+        circle_marker_6ca2f5bf3f30af4d4902514bef6f756f.bindPopup(popup_56524f4902affe3259c7d441f8170299)
+        ;
+
+        
+    
+    
+            var circle_marker_72deef191e1f326fe34312c0def9f973 = L.circleMarker(
+                [12.935393, 77.5453331],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_867a73dc77f91346143bd1bee904024d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b95c464d8c2a1da512cc0674fd097add = $(`<div id="html_b95c464d8c2a1da512cc0674fd097add" style="width: 100.0%; height: 100.0%;">     <b>Vaishali Deluxe</b><br><br>     Rating: 3.8/5<br>     Cuisines: North Indian, Chinese<br>     Cost for 2: 700     </div>`)[0];
+                popup_867a73dc77f91346143bd1bee904024d.setContent(html_b95c464d8c2a1da512cc0674fd097add);
+            
+        
+
+        circle_marker_72deef191e1f326fe34312c0def9f973.bindPopup(popup_867a73dc77f91346143bd1bee904024d)
+        ;
+
+        
+    
+    
+            var circle_marker_2203fbecadda644a9f786d751e38ddd1 = L.circleMarker(
+                [12.9233476, 77.5594984],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_f8f754e8b5e7b0b5f029d9a0f0c965b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6383246447a6539781496fb89b45ca24 = $(`<div id="html_6383246447a6539781496fb89b45ca24" style="width: 100.0%; height: 100.0%;">     <b>K27 - The Pub</b><br><br>     Rating: 3.1/5<br>     Cuisines: Chinese, North Indian<br>     Cost for 2: 1,000     </div>`)[0];
+                popup_f8f754e8b5e7b0b5f029d9a0f0c965b5.setContent(html_6383246447a6539781496fb89b45ca24);
+            
+        
+
+        circle_marker_2203fbecadda644a9f786d751e38ddd1.bindPopup(popup_f8f754e8b5e7b0b5f029d9a0f0c965b5)
+        ;
+
+        
+    
+    
+            var circle_marker_ce6e8dba50f5233878d381150976ff66 = L.circleMarker(
+                [12.9251014, 77.5621732],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_e100630e7c6451ac0edea740ace4220e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_886095e2bb06105d3cca50de45ce4ee9 = $(`<div id="html_886095e2bb06105d3cca50de45ce4ee9" style="width: 100.0%; height: 100.0%;">     <b>Kwality Wall's Swirl's Happiness Station</b><br><br>     Rating: 2.9/5<br>     Cuisines: Ice Cream, Desserts<br>     Cost for 2: 200     </div>`)[0];
+                popup_e100630e7c6451ac0edea740ace4220e.setContent(html_886095e2bb06105d3cca50de45ce4ee9);
+            
+        
+
+        circle_marker_ce6e8dba50f5233878d381150976ff66.bindPopup(popup_e100630e7c6451ac0edea740ace4220e)
+        ;
+
+        
+    
+    
+            var circle_marker_b6ab8d8fbb0f7f827e3ef0b8cd4a4269 = L.circleMarker(
+                [12.9185532, 77.5772555],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_2f1be6d2de8d4415a8d86fcfc9b09cde = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f2e780f1b67733bab957948e1eade141 = $(`<div id="html_f2e780f1b67733bab957948e1eade141" style="width: 100.0%; height: 100.0%;">     <b>Sri Udupi Food Hub</b><br><br>     Rating: 4.1/5<br>     Cuisines: South Indian, North Indian, Chinese, Beverages<br>     Cost for 2: 500     </div>`)[0];
+                popup_2f1be6d2de8d4415a8d86fcfc9b09cde.setContent(html_f2e780f1b67733bab957948e1eade141);
+            
+        
+
+        circle_marker_b6ab8d8fbb0f7f827e3ef0b8cd4a4269.bindPopup(popup_2f1be6d2de8d4415a8d86fcfc9b09cde)
+        ;
+
+        
+    
+    
+            var circle_marker_43cc3b59c0318483194f3c91be343c00 = L.circleMarker(
+                [12.9075768, 77.5634499],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_1692e66137d2f81b9e8ceed3c741882b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f85fa3a287894a0adc6c35f45857b6a8 = $(`<div id="html_f85fa3a287894a0adc6c35f45857b6a8" style="width: 100.0%; height: 100.0%;">     <b>Roll N Rock</b><br><br>     Rating: 3.8/5<br>     Cuisines: Chinese, North Indian, Mughlai, Rolls<br>     Cost for 2: 400     </div>`)[0];
+                popup_1692e66137d2f81b9e8ceed3c741882b.setContent(html_f85fa3a287894a0adc6c35f45857b6a8);
+            
+        
+
+        circle_marker_43cc3b59c0318483194f3c91be343c00.bindPopup(popup_1692e66137d2f81b9e8ceed3c741882b)
+        ;
+
+        
+    
+    
+            var circle_marker_d559428f84eca4c8f795ceb3fa6a4938 = L.circleMarker(
+                [12.9278196, 77.556621],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_13cc8b9e7db3864a660a6e839f73f913 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6e5ea77d8ad801f3abf003f4c3576d22 = $(`<div id="html_6e5ea77d8ad801f3abf003f4c3576d22" style="width: 100.0%; height: 100.0%;">     <b>Bitez</b><br><br>     Rating: NEW<br>     Cuisines: Fast Food<br>     Cost for 2: 100     </div>`)[0];
+                popup_13cc8b9e7db3864a660a6e839f73f913.setContent(html_6e5ea77d8ad801f3abf003f4c3576d22);
+            
+        
+
+        circle_marker_d559428f84eca4c8f795ceb3fa6a4938.bindPopup(popup_13cc8b9e7db3864a660a6e839f73f913)
+        ;
+
+        
+    
+    
+            var circle_marker_27941c98c838e27918f03f1eb653162d = L.circleMarker(
+                [12.9089389, 77.5664343],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_51f370cface0d42aff5b249f6930da54 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3e1260e1d9e8e53f3451252e4cd9813b = $(`<div id="html_3e1260e1d9e8e53f3451252e4cd9813b" style="width: 100.0%; height: 100.0%;">     <b>Lassi Shop</b><br><br>     Rating: 3.9/5<br>     Cuisines: Beverages, Juices, Ice Cream<br>     Cost for 2: 150     </div>`)[0];
+                popup_51f370cface0d42aff5b249f6930da54.setContent(html_3e1260e1d9e8e53f3451252e4cd9813b);
+            
+        
+
+        circle_marker_27941c98c838e27918f03f1eb653162d.bindPopup(popup_51f370cface0d42aff5b249f6930da54)
+        ;
+
+        
+    
+    
+            var circle_marker_5417313693008bb48728747afd10f7e6 = L.circleMarker(
+                [12.9348036, 77.5839564],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_3a4c8c80ca97c8d1f713c7bf2058c7a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bbc09a19c5f638649a6dee4ad4dbb9f2 = $(`<div id="html_bbc09a19c5f638649a6dee4ad4dbb9f2" style="width: 100.0%; height: 100.0%;">     <b>Wahab</b><br><br>     Rating: 3.7/5<br>     Cuisines: North Indian, Mughlai, Chinese<br>     Cost for 2: 350     </div>`)[0];
+                popup_3a4c8c80ca97c8d1f713c7bf2058c7a9.setContent(html_bbc09a19c5f638649a6dee4ad4dbb9f2);
+            
+        
+
+        circle_marker_5417313693008bb48728747afd10f7e6.bindPopup(popup_3a4c8c80ca97c8d1f713c7bf2058c7a9)
+        ;
+
+        
+    
+    
+            var circle_marker_9e33c669a20242c9f4caa5144ac8a604 = L.circleMarker(
+                [12.9386888, 77.5800028],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_0c43e406571b2111a6630c7d172c9cbc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7270e8bdd87b8a4cbeca10bd4dbd9455 = $(`<div id="html_7270e8bdd87b8a4cbeca10bd4dbd9455" style="width: 100.0%; height: 100.0%;">     <b>Energy Addaa</b><br><br>     Rating: 4.2/5<br>     Cuisines: Salad, Healthy Food, Sandwich, Juices, Burger, Desserts, Pizza<br>     Cost for 2: 500     </div>`)[0];
+                popup_0c43e406571b2111a6630c7d172c9cbc.setContent(html_7270e8bdd87b8a4cbeca10bd4dbd9455);
+            
+        
+
+        circle_marker_9e33c669a20242c9f4caa5144ac8a604.bindPopup(popup_0c43e406571b2111a6630c7d172c9cbc)
+        ;
+
+        
+    
+    
+            var circle_marker_5f5a0e6a6cbc59edd5fd3773ab123ece = L.circleMarker(
+                [12.9062421, 77.5632104],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_1d920a94df3792b3614a127eeb445b28 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_070ed11caec8830221ef70e41990ff5e = $(`<div id="html_070ed11caec8830221ef70e41990ff5e" style="width: 100.0%; height: 100.0%;">     <b>Mitraa Da Pizza</b><br><br>     Rating: 3.8/5<br>     Cuisines: Fast Food, Pizza<br>     Cost for 2: 250     </div>`)[0];
+                popup_1d920a94df3792b3614a127eeb445b28.setContent(html_070ed11caec8830221ef70e41990ff5e);
+            
+        
+
+        circle_marker_5f5a0e6a6cbc59edd5fd3773ab123ece.bindPopup(popup_1d920a94df3792b3614a127eeb445b28)
+        ;
+
+        
+    
+    
+            var circle_marker_cc08db2519e3bd2262983dfc5f241e4e = L.circleMarker(
+                [12.9062421, 77.5632104],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_e41b94fc9118e78c9dc90df029290aab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39e272bc104274acee379b578fbdb918 = $(`<div id="html_39e272bc104274acee379b578fbdb918" style="width: 100.0%; height: 100.0%;">     <b>@Italy</b><br><br>     Rating: 4.1/5<br>     Cuisines: Italian<br>     Cost for 2: 700     </div>`)[0];
+                popup_e41b94fc9118e78c9dc90df029290aab.setContent(html_39e272bc104274acee379b578fbdb918);
+            
+        
+
+        circle_marker_cc08db2519e3bd2262983dfc5f241e4e.bindPopup(popup_e41b94fc9118e78c9dc90df029290aab)
+        ;
+
+        
+    
+    
+            var circle_marker_c2afeb2c7b41e486998ecdae2ba67e87 = L.circleMarker(
+                [12.9062421, 77.5632104],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_cc26c63321d9e578260d23948048a14f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3030780baf382ca2dce1b9d67e87d143 = $(`<div id="html_3030780baf382ca2dce1b9d67e87d143" style="width: 100.0%; height: 100.0%;">     <b>Calcutta Cafe</b><br><br>     Rating: 3.5/5<br>     Cuisines: Bengali, Chinese, Sandwich<br>     Cost for 2: 350     </div>`)[0];
+                popup_cc26c63321d9e578260d23948048a14f.setContent(html_3030780baf382ca2dce1b9d67e87d143);
+            
+        
+
+        circle_marker_c2afeb2c7b41e486998ecdae2ba67e87.bindPopup(popup_cc26c63321d9e578260d23948048a14f)
+        ;
+
+        
+    
+    
+            var circle_marker_6a6df33525cdbb9eb24f79b9c4f8581e = L.circleMarker(
+                [12.9062421, 77.5632104],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_f59637b68edf860b1d04d5c5bb2ace4f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1315e29a097250e9eb32f29f3d9e4e6d = $(`<div id="html_1315e29a097250e9eb32f29f3d9e4e6d" style="width: 100.0%; height: 100.0%;">     <b>Just Shawarma</b><br><br>     Rating: 3.9/5<br>     Cuisines: Arabian<br>     Cost for 2: 300     </div>`)[0];
+                popup_f59637b68edf860b1d04d5c5bb2ace4f.setContent(html_1315e29a097250e9eb32f29f3d9e4e6d);
+            
+        
+
+        circle_marker_6a6df33525cdbb9eb24f79b9c4f8581e.bindPopup(popup_f59637b68edf860b1d04d5c5bb2ace4f)
+        ;
+
+        
+    
+    
+            var circle_marker_37e494a7d2bf82d79896103da3f10434 = L.circleMarker(
+                [12.943658, 77.5698444],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_def746325823558965587098e7058c90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43fe5965e4de98f044fdf71b51f9fe6a = $(`<div id="html_43fe5965e4de98f044fdf71b51f9fe6a" style="width: 100.0%; height: 100.0%;">     <b>Asha Sweets Centre</b><br><br>     Rating: 3.6/5<br>     Cuisines: Fast Food<br>     Cost for 2: 250     </div>`)[0];
+                popup_def746325823558965587098e7058c90.setContent(html_43fe5965e4de98f044fdf71b51f9fe6a);
+            
+        
+
+        circle_marker_37e494a7d2bf82d79896103da3f10434.bindPopup(popup_def746325823558965587098e7058c90)
+        ;
+
+        
+    
+    
+            var circle_marker_fafa1a92c530bf87c59e6065cf6c89d7 = L.circleMarker(
+                [12.9417261, 77.5755021],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_8874fcff8de3992a379eb107dc218493 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f4c75924c3cd4925724892c3f1dad49 = $(`<div id="html_5f4c75924c3cd4925724892c3f1dad49" style="width: 100.0%; height: 100.0%;">     <b>Inchara Restaurant</b><br><br>     Rating: nan<br>     Cuisines: North Indian, Chinese<br>     Cost for 2: 300     </div>`)[0];
+                popup_8874fcff8de3992a379eb107dc218493.setContent(html_5f4c75924c3cd4925724892c3f1dad49);
+            
+        
+
+        circle_marker_fafa1a92c530bf87c59e6065cf6c89d7.bindPopup(popup_8874fcff8de3992a379eb107dc218493)
+        ;
+
+        
+    
+    
+            var circle_marker_7552297cd7dd923d4de8566b0b74a5e6 = L.circleMarker(
+                [12.9449892, 77.5694291],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_3585cfd156b80def5d2d850ca709164b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21e0f94fbde44665d76c0f27beb9e538 = $(`<div id="html_21e0f94fbde44665d76c0f27beb9e538" style="width: 100.0%; height: 100.0%;">     <b>Aahar Cafe</b><br><br>     Rating: nan<br>     Cuisines: South Indian<br>     Cost for 2: 100     </div>`)[0];
+                popup_3585cfd156b80def5d2d850ca709164b.setContent(html_21e0f94fbde44665d76c0f27beb9e538);
+            
+        
+
+        circle_marker_7552297cd7dd923d4de8566b0b74a5e6.bindPopup(popup_3585cfd156b80def5d2d850ca709164b)
+        ;
+
+        
+    
+    
+            var circle_marker_bad92cbf53bde3e7e778abe5dc3a0116 = L.circleMarker(
+                [12.92482, 77.5854202],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_1107ebb5ffd4a62ba7d4a859767dc667 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_124d7836db01f20d03c5f757225e0a49 = $(`<div id="html_124d7836db01f20d03c5f757225e0a49" style="width: 100.0%; height: 100.0%;">     <b>Ugadi</b><br><br>     Rating: 2.9/5<br>     Cuisines: North Indian, Chinese, Biryani, Andhra, Mangalorean<br>     Cost for 2: 700     </div>`)[0];
+                popup_1107ebb5ffd4a62ba7d4a859767dc667.setContent(html_124d7836db01f20d03c5f757225e0a49);
+            
+        
+
+        circle_marker_bad92cbf53bde3e7e778abe5dc3a0116.bindPopup(popup_1107ebb5ffd4a62ba7d4a859767dc667)
+        ;
+
+        
+    
+    
+            var circle_marker_0579f273243742e1131fc22aa468fc4b = L.circleMarker(
+                [12.9280519, 77.5953575],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_655a4fe178b2f164be0c8fbe0a3fca70 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a156c1c95c168c1ba915ee49c1b314a2 = $(`<div id="html_a156c1c95c168c1ba915ee49c1b314a2" style="width: 100.0%; height: 100.0%;">     <b>Cafe Coffee Day</b><br><br>     Rating: 3.2/5<br>     Cuisines: Cafe, Fast Food<br>     Cost for 2: 900     </div>`)[0];
+                popup_655a4fe178b2f164be0c8fbe0a3fca70.setContent(html_a156c1c95c168c1ba915ee49c1b314a2);
+            
+        
+
+        circle_marker_0579f273243742e1131fc22aa468fc4b.bindPopup(popup_655a4fe178b2f164be0c8fbe0a3fca70)
+        ;
+
+        
+    
+    
+            var circle_marker_f7cae87ab62366bbc9ec39644622e4b5 = L.circleMarker(
+                [12.9251014, 77.5621732],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_3353aca0eabc2f4574ffa40ac7520e0a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32e773423d660f57ef7e095ddfd65255 = $(`<div id="html_32e773423d660f57ef7e095ddfd65255" style="width: 100.0%; height: 100.0%;">     <b>J Spice</b><br><br>     Rating: 3.8/5<br>     Cuisines: North Indian, Chinese<br>     Cost for 2: 750     </div>`)[0];
+                popup_3353aca0eabc2f4574ffa40ac7520e0a.setContent(html_32e773423d660f57ef7e095ddfd65255);
+            
+        
+
+        circle_marker_f7cae87ab62366bbc9ec39644622e4b5.bindPopup(popup_3353aca0eabc2f4574ffa40ac7520e0a)
+        ;
+
+        
+    
+    
+            var circle_marker_5b17584ee6256e1ad99f9b8acaa8e1ee = L.circleMarker(
+                [12.9062421, 77.5632104],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_d60dc4a1110fb707ca0226270b54a378 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_66a44016d22370072963922bf64d6161 = $(`<div id="html_66a44016d22370072963922bf64d6161" style="width: 100.0%; height: 100.0%;">     <b>Karavali Lunch Home</b><br><br>     Rating: 3.7/5<br>     Cuisines: South Indian, Mangalorean<br>     Cost for 2: 350     </div>`)[0];
+                popup_d60dc4a1110fb707ca0226270b54a378.setContent(html_66a44016d22370072963922bf64d6161);
+            
+        
+
+        circle_marker_5b17584ee6256e1ad99f9b8acaa8e1ee.bindPopup(popup_d60dc4a1110fb707ca0226270b54a378)
+        ;
+
+        
+    
+    
+            var circle_marker_a8c6af4368c53513de3850204c69f54c = L.circleMarker(
+                [12.9346702, 77.5833192],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_878199ff28857c733563045227befc7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_20a996035e6a096dbe323c2d2afda81d = $(`<div id="html_20a996035e6a096dbe323c2d2afda81d" style="width: 100.0%; height: 100.0%;">     <b>Chung Wah</b><br><br>     Rating: 3.7/5<br>     Cuisines: Chinese, Thai, Momos<br>     Cost for 2: 850     </div>`)[0];
+                popup_878199ff28857c733563045227befc7c.setContent(html_20a996035e6a096dbe323c2d2afda81d);
+            
+        
+
+        circle_marker_a8c6af4368c53513de3850204c69f54c.bindPopup(popup_878199ff28857c733563045227befc7c)
+        ;
+
+        
+    
+    
+            var circle_marker_db319c5fe103db29a617d0e8c5b62c83 = L.circleMarker(
+                [12.9307687, 77.5849603],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_d955bb1911a6af14294cbf611cf7e1d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_446d64b36f781f29e8d9d1d3073e941b = $(`<div id="html_446d64b36f781f29e8d9d1d3073e941b" style="width: 100.0%; height: 100.0%;">     <b>Bangalore Agarwal Bhavan</b><br><br>     Rating: 3.9/5<br>     Cuisines: Street Food, North Indian, South Indian<br>     Cost for 2: 400     </div>`)[0];
+                popup_d955bb1911a6af14294cbf611cf7e1d4.setContent(html_446d64b36f781f29e8d9d1d3073e941b);
+            
+        
+
+        circle_marker_db319c5fe103db29a617d0e8c5b62c83.bindPopup(popup_d955bb1911a6af14294cbf611cf7e1d4)
+        ;
+
+        
+    
+    
+            var circle_marker_0ab1adfc51847904020c78f506c14947 = L.circleMarker(
+                [12.9272871, 77.5791483],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_9d1583d581def7610a340ba7878a98c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3ba35ca945a40a6136544fbe5788af3 = $(`<div id="html_a3ba35ca945a40a6136544fbe5788af3" style="width: 100.0%; height: 100.0%;">     <b>Rustic Stove</b><br><br>     Rating: 3.8/5<br>     Cuisines: North Indian, South Indian, Biryani, Beverages<br>     Cost for 2: 900     </div>`)[0];
+                popup_9d1583d581def7610a340ba7878a98c2.setContent(html_a3ba35ca945a40a6136544fbe5788af3);
+            
+        
+
+        circle_marker_0ab1adfc51847904020c78f506c14947.bindPopup(popup_9d1583d581def7610a340ba7878a98c2)
+        ;
+
+        
+    
+    
+            var circle_marker_e54e94bbde145d87d9c7c93805892fbe = L.circleMarker(
+                [12.8835602, 77.5140959],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_0034e327be8c884cd8c87802bb74ee30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c064573f2dbb5758e6b08e53cbaff62 = $(`<div id="html_8c064573f2dbb5758e6b08e53cbaff62" style="width: 100.0%; height: 100.0%;">     <b>Udupi Ruchi Grand</b><br><br>     Rating: 4.2/5<br>     Cuisines: South Indian, North Indian, Chinese, Street Food<br>     Cost for 2: 200     </div>`)[0];
+                popup_0034e327be8c884cd8c87802bb74ee30.setContent(html_8c064573f2dbb5758e6b08e53cbaff62);
+            
+        
+
+        circle_marker_e54e94bbde145d87d9c7c93805892fbe.bindPopup(popup_0034e327be8c884cd8c87802bb74ee30)
+        ;
+
+        
+    
+    
+            var circle_marker_01934e016ef3175d4a9991b9279d089c = L.circleMarker(
+                [12.9459231, 77.5705708],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_4373fdf1819be765e869d5259259f68b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec99cca7b4b9d0c59f3587aad1d35d57 = $(`<div id="html_ec99cca7b4b9d0c59f3587aad1d35d57" style="width: 100.0%; height: 100.0%;">     <b>Just Thindi</b><br><br>     Rating: 3.6/5<br>     Cuisines: South Indian<br>     Cost for 2: 200     </div>`)[0];
+                popup_4373fdf1819be765e869d5259259f68b.setContent(html_ec99cca7b4b9d0c59f3587aad1d35d57);
+            
+        
+
+        circle_marker_01934e016ef3175d4a9991b9279d089c.bindPopup(popup_4373fdf1819be765e869d5259259f68b)
+        ;
+
+        
+    
+    
+            var circle_marker_ff7f437609b843c1f0566d612a62ef65 = L.circleMarker(
+                [12.9122113, 77.564076],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_26f16c8cf7ce79dfc5aa5c4b507ede9d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a707f776a58d60f8856d18cf33898ccf = $(`<div id="html_a707f776a58d60f8856d18cf33898ccf" style="width: 100.0%; height: 100.0%;">     <b>Cafe Zone</b><br><br>     Rating: 3.9/5<br>     Cuisines: Fast Food, Chinese, Rolls<br>     Cost for 2: 300     </div>`)[0];
+                popup_26f16c8cf7ce79dfc5aa5c4b507ede9d.setContent(html_a707f776a58d60f8856d18cf33898ccf);
+            
+        
+
+        circle_marker_ff7f437609b843c1f0566d612a62ef65.bindPopup(popup_26f16c8cf7ce79dfc5aa5c4b507ede9d)
+        ;
+
+        
+    
+    
+            var circle_marker_7199db8050b6e80d8548be731359fa29 = L.circleMarker(
+                [12.9251014, 77.5621732],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_ff6c6bd8f33ee236e7cac3296bb4d416 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4688b41d47ae55fa8e0340576cd715b = $(`<div id="html_f4688b41d47ae55fa8e0340576cd715b" style="width: 100.0%; height: 100.0%;">     <b>Ruchis Point</b><br><br>     Rating: 3.8/5<br>     Cuisines: Fast Food, Chinese<br>     Cost for 2: 200     </div>`)[0];
+                popup_ff6c6bd8f33ee236e7cac3296bb4d416.setContent(html_f4688b41d47ae55fa8e0340576cd715b);
+            
+        
+
+        circle_marker_7199db8050b6e80d8548be731359fa29.bindPopup(popup_ff6c6bd8f33ee236e7cac3296bb4d416)
+        ;
+
+        
+    
+    
+            var circle_marker_484c51d4db2a6d7e601ba8158644d776 = L.circleMarker(
+                [12.9318818, 77.583576],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_d39628a787c58379899f0cffda39a5cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b500365255c3e106b5f2c7a7425fb16a = $(`<div id="html_b500365255c3e106b5f2c7a7425fb16a" style="width: 100.0%; height: 100.0%;">     <b>Chocoberry</b><br><br>     Rating: 3.5/5<br>     Cuisines: Ice Cream, Desserts, Beverages<br>     Cost for 2: 400     </div>`)[0];
+                popup_d39628a787c58379899f0cffda39a5cb.setContent(html_b500365255c3e106b5f2c7a7425fb16a);
+            
+        
+
+        circle_marker_484c51d4db2a6d7e601ba8158644d776.bindPopup(popup_d39628a787c58379899f0cffda39a5cb)
+        ;
+
+        
+    
+    
+            var circle_marker_fe2a3c2a48c68c5f7c0544ca6de57310 = L.circleMarker(
+                [12.9244549, 77.5650085],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_3d56767353e0f158400ee9322b5b4773 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0333fa56451cd5463ab1256ea3111e99 = $(`<div id="html_0333fa56451cd5463ab1256ea3111e99" style="width: 100.0%; height: 100.0%;">     <b>Waffle-A-Go Go</b><br><br>     Rating: 3.9/5<br>     Cuisines: Fast Food, Desserts, Ice Cream<br>     Cost for 2: 400     </div>`)[0];
+                popup_3d56767353e0f158400ee9322b5b4773.setContent(html_0333fa56451cd5463ab1256ea3111e99);
+            
+        
+
+        circle_marker_fe2a3c2a48c68c5f7c0544ca6de57310.bindPopup(popup_3d56767353e0f158400ee9322b5b4773)
+        ;
+
+        
+    
+    
+            var circle_marker_010bd81eddf8d866525cd1fed76038af = L.circleMarker(
+                [12.9253471, 77.5827983],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_6fcaa101c9399f300f3b550891dd3586 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b9aa13d46eb71074c95594576c4c2cf = $(`<div id="html_0b9aa13d46eb71074c95594576c4c2cf" style="width: 100.0%; height: 100.0%;">     <b>Kaapi Kendra</b><br><br>     Rating: 3.7/5<br>     Cuisines: South Indian<br>     Cost for 2: 100     </div>`)[0];
+                popup_6fcaa101c9399f300f3b550891dd3586.setContent(html_0b9aa13d46eb71074c95594576c4c2cf);
+            
+        
+
+        circle_marker_010bd81eddf8d866525cd1fed76038af.bindPopup(popup_6fcaa101c9399f300f3b550891dd3586)
+        ;
+
+        
+    
+    
+            var circle_marker_bfdf7537255824db4fdfcbd2a7b26366 = L.circleMarker(
+                [12.9318818, 77.583576],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_5a7c25be548efb3cacab959a579a9dae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f29c491f40fd3ac3b309fc620f8a255c = $(`<div id="html_f29c491f40fd3ac3b309fc620f8a255c" style="width: 100.0%; height: 100.0%;">     <b>Magic Meals</b><br><br>     Rating: 3.7/5<br>     Cuisines: Fast Food, Desserts, Beverages<br>     Cost for 2: 400     </div>`)[0];
+                popup_5a7c25be548efb3cacab959a579a9dae.setContent(html_f29c491f40fd3ac3b309fc620f8a255c);
+            
+        
+
+        circle_marker_bfdf7537255824db4fdfcbd2a7b26366.bindPopup(popup_5a7c25be548efb3cacab959a579a9dae)
+        ;
+
+        
+    
+    
+            var circle_marker_22bd329f3dc6468dbf016601c08340d7 = L.circleMarker(
+                [12.9326305, 77.5923301],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_cc6aabb329d5c3949a01159d89f6829d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5355ba81a621d00492df45aa18dc4d97 = $(`<div id="html_5355ba81a621d00492df45aa18dc4d97" style="width: 100.0%; height: 100.0%;">     <b>Desi Cream Junction</b><br><br>     Rating: 3.7/5<br>     Cuisines: Chinese, North Indian, Pizza, Italian<br>     Cost for 2: 650     </div>`)[0];
+                popup_cc6aabb329d5c3949a01159d89f6829d.setContent(html_5355ba81a621d00492df45aa18dc4d97);
+            
+        
+
+        circle_marker_22bd329f3dc6468dbf016601c08340d7.bindPopup(popup_cc6aabb329d5c3949a01159d89f6829d)
+        ;
+
+        
+    
+    
+            var circle_marker_e4e60bea409661c4e1a3ab94eb1aad38 = L.circleMarker(
+                [12.9062421, 77.5632104],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_d35e679a9b02d6bc33a91484001731e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb80c7a95476f08c33b23c13a726eeff = $(`<div id="html_fb80c7a95476f08c33b23c13a726eeff" style="width: 100.0%; height: 100.0%;">     <b>Drunken Monkey</b><br><br>     Rating: 3.8/5<br>     Cuisines: Beverages, Fast Food<br>     Cost for 2: 400     </div>`)[0];
+                popup_d35e679a9b02d6bc33a91484001731e8.setContent(html_fb80c7a95476f08c33b23c13a726eeff);
+            
+        
+
+        circle_marker_e4e60bea409661c4e1a3ab94eb1aad38.bindPopup(popup_d35e679a9b02d6bc33a91484001731e8)
+        ;
+
+        
+    
+    
+            var circle_marker_38a446c4d0219b3fdba09f9fb6789c8f = L.circleMarker(
+                [12.9251014, 77.5621732],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_c2252dc49a978d6f821fe3774624868e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_43a0393082dd8a674d2da1c5b030f67e = $(`<div id="html_43a0393082dd8a674d2da1c5b030f67e" style="width: 100.0%; height: 100.0%;">     <b>Ruchi's Corner</b><br><br>     Rating: 2.7/5<br>     Cuisines: Fast Food<br>     Cost for 2: 200     </div>`)[0];
+                popup_c2252dc49a978d6f821fe3774624868e.setContent(html_43a0393082dd8a674d2da1c5b030f67e);
+            
+        
+
+        circle_marker_38a446c4d0219b3fdba09f9fb6789c8f.bindPopup(popup_c2252dc49a978d6f821fe3774624868e)
+        ;
+
+        
+    
+    
+            var circle_marker_4970edf3949b744d01bda18b46446e1c = L.circleMarker(
+                [12.9251014, 77.5621732],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_9dc137a85b5f5fb51f86a4e8b7e801a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b523327b953d45e51db2d5047edd71ec = $(`<div id="html_b523327b953d45e51db2d5047edd71ec" style="width: 100.0%; height: 100.0%;">     <b>Keventers</b><br><br>     Rating: 3.7/5<br>     Cuisines: Desserts, Beverages, Ice Cream<br>     Cost for 2: 400     </div>`)[0];
+                popup_9dc137a85b5f5fb51f86a4e8b7e801a7.setContent(html_b523327b953d45e51db2d5047edd71ec);
+            
+        
+
+        circle_marker_4970edf3949b744d01bda18b46446e1c.bindPopup(popup_9dc137a85b5f5fb51f86a4e8b7e801a7)
+        ;
+
+        
+    
+    
+            var circle_marker_e3d96422e2828b9fe53256a50518b50a = L.circleMarker(
+                [12.943658, 77.5698444],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_91afa45903db284d3b65bc1f200d5777 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45ad7a533072694198d8294063b1f00f = $(`<div id="html_45ad7a533072694198d8294063b1f00f" style="width: 100.0%; height: 100.0%;">     <b>Food Geek</b><br><br>     Rating: 3.8/5<br>     Cuisines: Sandwich, Fast Food, Rolls<br>     Cost for 2: 350     </div>`)[0];
+                popup_91afa45903db284d3b65bc1f200d5777.setContent(html_45ad7a533072694198d8294063b1f00f);
+            
+        
+
+        circle_marker_e3d96422e2828b9fe53256a50518b50a.bindPopup(popup_91afa45903db284d3b65bc1f200d5777)
+        ;
+
+        
+    
+    
+            var circle_marker_9233f0b5c993727541ee826a290dd1f7 = L.circleMarker(
+                [12.9045678, 77.5638426],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_82a4a4b78fbead7c4639dd81587834ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c925e5e72b3a191356d635c851dcc118 = $(`<div id="html_c925e5e72b3a191356d635c851dcc118" style="width: 100.0%; height: 100.0%;">     <b>Food Point</b><br><br>     Rating: 3.5/5<br>     Cuisines: North Indian, Chinese<br>     Cost for 2: 300     </div>`)[0];
+                popup_82a4a4b78fbead7c4639dd81587834ba.setContent(html_c925e5e72b3a191356d635c851dcc118);
+            
+        
+
+        circle_marker_9233f0b5c993727541ee826a290dd1f7.bindPopup(popup_82a4a4b78fbead7c4639dd81587834ba)
+        ;
+
+        
+    
+    
+            var circle_marker_0bd790d8b347f44654bbe67e0185b321 = L.circleMarker(
+                [12.9272871, 77.5791483],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_a826e1c134fbbaba50e2f3620c40e53b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2a923a36d4e81874a45b233ad775b1ed = $(`<div id="html_2a923a36d4e81874a45b233ad775b1ed" style="width: 100.0%; height: 100.0%;">     <b>Eurasia Pasta and Barbeque by Little Italy</b><br><br>     Rating: 4.1/5<br>     Cuisines: Italian, Fast Food, Salad, BBQ<br>     Cost for 2: 1,200     </div>`)[0];
+                popup_a826e1c134fbbaba50e2f3620c40e53b.setContent(html_2a923a36d4e81874a45b233ad775b1ed);
+            
+        
+
+        circle_marker_0bd790d8b347f44654bbe67e0185b321.bindPopup(popup_a826e1c134fbbaba50e2f3620c40e53b)
+        ;
+
+        
+    
+    
+            var circle_marker_d034bf2b34ead2fa2b7fe9772459b018 = L.circleMarker(
+                [12.9286329, 77.5860128],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_53e278f0415262383352a712a246dc5c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_531d984b3a40399b5697a74ff8f3f99c = $(`<div id="html_531d984b3a40399b5697a74ff8f3f99c" style="width: 100.0%; height: 100.0%;">     <b>Maiyas</b><br><br>     Rating: 4.0/5<br>     Cuisines: North Indian, South Indian, Fast Food, Juices<br>     Cost for 2: 200     </div>`)[0];
+                popup_53e278f0415262383352a712a246dc5c.setContent(html_531d984b3a40399b5697a74ff8f3f99c);
+            
+        
+
+        circle_marker_d034bf2b34ead2fa2b7fe9772459b018.bindPopup(popup_53e278f0415262383352a712a246dc5c)
+        ;
+
+        
+    
+    
+            var circle_marker_dadf8e9816f404ab82544ed36affdfb2 = L.circleMarker(
+                [12.9307687, 77.5849603],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_87e2dd14807286761d834cef0afdf173 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61c32083cbb3184c07a0199066c424a8 = $(`<div id="html_61c32083cbb3184c07a0199066c424a8" style="width: 100.0%; height: 100.0%;">     <b>Anand Sweets and Savouries</b><br><br>     Rating: 3.9/5<br>     Cuisines: Mithai, Street Food<br>     Cost for 2: 400     </div>`)[0];
+                popup_87e2dd14807286761d834cef0afdf173.setContent(html_61c32083cbb3184c07a0199066c424a8);
+            
+        
+
+        circle_marker_dadf8e9816f404ab82544ed36affdfb2.bindPopup(popup_87e2dd14807286761d834cef0afdf173)
+        ;
+
+        
+    
+    
+            var circle_marker_16327b522f281c3ab6d20bdc3a8e1186 = L.circleMarker(
+                [12.9455021, 77.5678472],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_03cd78b90c456b1522f504b70fdc6034 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d8b61a7096b9ce9d9f32a269fc073bf9 = $(`<div id="html_d8b61a7096b9ce9d9f32a269fc073bf9" style="width: 100.0%; height: 100.0%;">     <b>Cane-O-La</b><br><br>     Rating: 3.8/5<br>     Cuisines: Juices<br>     Cost for 2: 100     </div>`)[0];
+                popup_03cd78b90c456b1522f504b70fdc6034.setContent(html_d8b61a7096b9ce9d9f32a269fc073bf9);
+            
+        
+
+        circle_marker_16327b522f281c3ab6d20bdc3a8e1186.bindPopup(popup_03cd78b90c456b1522f504b70fdc6034)
+        ;
+
+        
+    
+    
+            var circle_marker_7d0d1c06917fdf27291cd1e3e569e3cb = L.circleMarker(
+                [12.9318125, 77.5838867],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_b10897cbda4053027e2a23a2637a5609 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2f98ded0eb679889032e82db6c0d78c = $(`<div id="html_d2f98ded0eb679889032e82db6c0d78c" style="width: 100.0%; height: 100.0%;">     <b>Upahara Darshini</b><br><br>     Rating: 3.8/5<br>     Cuisines: South Indian, North Indian, Chinese<br>     Cost for 2: 400     </div>`)[0];
+                popup_b10897cbda4053027e2a23a2637a5609.setContent(html_d2f98ded0eb679889032e82db6c0d78c);
+            
+        
+
+        circle_marker_7d0d1c06917fdf27291cd1e3e569e3cb.bindPopup(popup_b10897cbda4053027e2a23a2637a5609)
+        ;
+
+        
+    
+    
+            var circle_marker_12b5c0e0cb38a7254dc29e72647644d7 = L.circleMarker(
+                [12.9466141, 77.5678123],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_cfefd15f922845efe534ea8c4eaed57f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec239f9a33585ebf98329fdb7454a1fa = $(`<div id="html_ec239f9a33585ebf98329fdb7454a1fa" style="width: 100.0%; height: 100.0%;">     <b>Juice Junction Food Court</b><br><br>     Rating: 3.7/5<br>     Cuisines: Juices, South Indian, Chinese, Fast Food<br>     Cost for 2: 200     </div>`)[0];
+                popup_cfefd15f922845efe534ea8c4eaed57f.setContent(html_ec239f9a33585ebf98329fdb7454a1fa);
+            
+        
+
+        circle_marker_12b5c0e0cb38a7254dc29e72647644d7.bindPopup(popup_cfefd15f922845efe534ea8c4eaed57f)
+        ;
+
+        
+    
+    
+            var circle_marker_9a70e1dae3867677c040c1b72772a0eb = L.circleMarker(
+                [12.9340186, 77.5464037],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_8ff382fe59893e440d4c7ba5a89ac951 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1a43a5838a6619fbf1d6abf8c836770a = $(`<div id="html_1a43a5838a6619fbf1d6abf8c836770a" style="width: 100.0%; height: 100.0%;">     <b>Utsav</b><br><br>     Rating: 3.7/5<br>     Cuisines: North Indian, Street Food<br>     Cost for 2: 200     </div>`)[0];
+                popup_8ff382fe59893e440d4c7ba5a89ac951.setContent(html_1a43a5838a6619fbf1d6abf8c836770a);
+            
+        
+
+        circle_marker_9a70e1dae3867677c040c1b72772a0eb.bindPopup(popup_8ff382fe59893e440d4c7ba5a89ac951)
+        ;
+
+        
+    
+    
+            var circle_marker_5fff2ff49303f401a8ef55ce614d825c = L.circleMarker(
+                [12.9062421, 77.5632104],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_0cb0685d346f67e417e2f6b26c354e7a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a427aa8fca9e288bfa47f1a6c8deabb1 = $(`<div id="html_a427aa8fca9e288bfa47f1a6c8deabb1" style="width: 100.0%; height: 100.0%;">     <b>The Spice Saga</b><br><br>     Rating: 3.7/5<br>     Cuisines: Biryani, North Indian, Chinese, Seafood<br>     Cost for 2: 750     </div>`)[0];
+                popup_0cb0685d346f67e417e2f6b26c354e7a.setContent(html_a427aa8fca9e288bfa47f1a6c8deabb1);
+            
+        
+
+        circle_marker_5fff2ff49303f401a8ef55ce614d825c.bindPopup(popup_0cb0685d346f67e417e2f6b26c354e7a)
+        ;
+
+        
+    
+    
+            var circle_marker_5ffe6a0ea78911514af82427983a8b26 = L.circleMarker(
+                [12.9062421, 77.5632104],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_bb7c061b5705e89199f4f68f7de6240e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58bb3238b79de09020897f45aa19be21 = $(`<div id="html_58bb3238b79de09020897f45aa19be21" style="width: 100.0%; height: 100.0%;">     <b>Ifruit Ice Cream</b><br><br>     Rating: 3.3/5<br>     Cuisines: Desserts, Ice Cream<br>     Cost for 2: 150     </div>`)[0];
+                popup_bb7c061b5705e89199f4f68f7de6240e.setContent(html_58bb3238b79de09020897f45aa19be21);
+            
+        
+
+        circle_marker_5ffe6a0ea78911514af82427983a8b26.bindPopup(popup_bb7c061b5705e89199f4f68f7de6240e)
+        ;
+
+        
+    
+    
+            var circle_marker_38ec1949cca06aed752840cae6f9a6e6 = L.circleMarker(
+                [12.9454147, 77.5712845],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_807cad7c76d2ed21a5a122597d7a0c3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3fc1e002e07167dc9a97df63846a96a8 = $(`<div id="html_3fc1e002e07167dc9a97df63846a96a8" style="width: 100.0%; height: 100.0%;">     <b>Swadd Kitchen</b><br><br>     Rating: 3.4/5<br>     Cuisines: North Indian, Fast Food<br>     Cost for 2: 500     </div>`)[0];
+                popup_807cad7c76d2ed21a5a122597d7a0c3e.setContent(html_3fc1e002e07167dc9a97df63846a96a8);
+            
+        
+
+        circle_marker_38ec1949cca06aed752840cae6f9a6e6.bindPopup(popup_807cad7c76d2ed21a5a122597d7a0c3e)
+        ;
+
+        
+    
+    
+            var circle_marker_c418953d5ef47ce9ad0a8f8d3d0de9d4 = L.circleMarker(
+                [12.943658, 77.5698444],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_29b7eb3dfa5853b4221f4aaa05d1d152 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b5a3583cad26f4655781063c1391aab3 = $(`<div id="html_b5a3583cad26f4655781063c1391aab3" style="width: 100.0%; height: 100.0%;">     <b>Happy Chopsticks</b><br><br>     Rating: 3.6/5<br>     Cuisines: Chinese, Fast Food<br>     Cost for 2: 300     </div>`)[0];
+                popup_29b7eb3dfa5853b4221f4aaa05d1d152.setContent(html_b5a3583cad26f4655781063c1391aab3);
+            
+        
+
+        circle_marker_c418953d5ef47ce9ad0a8f8d3d0de9d4.bindPopup(popup_29b7eb3dfa5853b4221f4aaa05d1d152)
+        ;
+
+        
+    
+    
+            var circle_marker_d2c2af1ec681386dfc85ffe9a6f4b83c = L.circleMarker(
+                [12.9243553, 77.5648981],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_8fcdc98c346ef86a24ee315c281ed84d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3abbeb546ae2ddfec69fc038eae5c027 = $(`<div id="html_3abbeb546ae2ddfec69fc038eae5c027" style="width: 100.0%; height: 100.0%;">     <b>Vinny's</b><br><br>     Rating: 4.2/5<br>     Cuisines: Pizza, Italian, Continental, Desserts<br>     Cost for 2: 800     </div>`)[0];
+                popup_8fcdc98c346ef86a24ee315c281ed84d.setContent(html_3abbeb546ae2ddfec69fc038eae5c027);
+            
+        
+
+        circle_marker_d2c2af1ec681386dfc85ffe9a6f4b83c.bindPopup(popup_8fcdc98c346ef86a24ee315c281ed84d)
+        ;
+
+        
+    
+    
+            var circle_marker_66428f0c8831aa9ef8ec5a1863b89d8d = L.circleMarker(
+                [12.927335, 77.5871229],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_1ba962e9f20e237aede9dffe5ae09708 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_19561f6de178d99fd7e8322f6e4adcdf = $(`<div id="html_19561f6de178d99fd7e8322f6e4adcdf" style="width: 100.0%; height: 100.0%;">     <b>Kapoor's Cafe</b><br><br>     Rating: 4.2/5<br>     Cuisines: North Indian<br>     Cost for 2: 800     </div>`)[0];
+                popup_1ba962e9f20e237aede9dffe5ae09708.setContent(html_19561f6de178d99fd7e8322f6e4adcdf);
+            
+        
+
+        circle_marker_66428f0c8831aa9ef8ec5a1863b89d8d.bindPopup(popup_1ba962e9f20e237aede9dffe5ae09708)
+        ;
+
+        
+    
+    
+            var circle_marker_affedbdfbd3f43a5393d55d1f31500ad = L.circleMarker(
+                [12.926294, 77.5860056],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_e63f403e8571d83c84877b18dd9eb125 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f95cb9fdacb35e2ef40dba3ea286165e = $(`<div id="html_f95cb9fdacb35e2ef40dba3ea286165e" style="width: 100.0%; height: 100.0%;">     <b>Brew Meister</b><br><br>     Rating: 4.1/5<br>     Cuisines: North Indian, Continental, Finger Food, American, Asian<br>     Cost for 2: 1,500     </div>`)[0];
+                popup_e63f403e8571d83c84877b18dd9eb125.setContent(html_f95cb9fdacb35e2ef40dba3ea286165e);
+            
+        
+
+        circle_marker_affedbdfbd3f43a5393d55d1f31500ad.bindPopup(popup_e63f403e8571d83c84877b18dd9eb125)
+        ;
+
+        
+    
+    
+            var circle_marker_6363249a8d2cc6d4e91e358b3f3bf7a2 = L.circleMarker(
+                [12.9285528, 77.582297],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_b1b6d44737eebcc4ff5cc36ee1a89e9f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5cc128648e8fd0066c851e81a85a6635 = $(`<div id="html_5cc128648e8fd0066c851e81a85a6635" style="width: 100.0%; height: 100.0%;">     <b>Biriyani Mane</b><br><br>     Rating: 3.8/5<br>     Cuisines: North Indian, Biryani<br>     Cost for 2: 400     </div>`)[0];
+                popup_b1b6d44737eebcc4ff5cc36ee1a89e9f.setContent(html_5cc128648e8fd0066c851e81a85a6635);
+            
+        
+
+        circle_marker_6363249a8d2cc6d4e91e358b3f3bf7a2.bindPopup(popup_b1b6d44737eebcc4ff5cc36ee1a89e9f)
+        ;
+
+        
+    
+    
+            var circle_marker_5c1b9b20093b5a80fc077d6367263a9f = L.circleMarker(
+                [12.9447626, 77.5717734],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_7279be74b86b30aa6f2ba8d385179ff7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_16b4c3217e181643f872cea8438ca183 = $(`<div id="html_16b4c3217e181643f872cea8438ca183" style="width: 100.0%; height: 100.0%;">     <b>Roti Ghar</b><br><br>     Rating: 3.9/5<br>     Cuisines: North Indian, Chinese, South Indian<br>     Cost for 2: 500     </div>`)[0];
+                popup_7279be74b86b30aa6f2ba8d385179ff7.setContent(html_16b4c3217e181643f872cea8438ca183);
+            
+        
+
+        circle_marker_5c1b9b20093b5a80fc077d6367263a9f.bindPopup(popup_7279be74b86b30aa6f2ba8d385179ff7)
+        ;
+
+        
+    
+    
+            var circle_marker_4b19806fc27b760f63ce7142ffc60fe5 = L.circleMarker(
+                [12.8835602, 77.5140959],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_1f12bf81baeed676e2dbd2d1929801eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5dd313e994c956d5f826b5b690be33c = $(`<div id="html_d5dd313e994c956d5f826b5b690be33c" style="width: 100.0%; height: 100.0%;">     <b>The Coffee Shack</b><br><br>     Rating: 4.2/5<br>     Cuisines: Cafe, Chinese, Continental, Italian<br>     Cost for 2: 500     </div>`)[0];
+                popup_1f12bf81baeed676e2dbd2d1929801eb.setContent(html_d5dd313e994c956d5f826b5b690be33c);
+            
+        
+
+        circle_marker_4b19806fc27b760f63ce7142ffc60fe5.bindPopup(popup_1f12bf81baeed676e2dbd2d1929801eb)
+        ;
+
+        
+    
+    
+            var circle_marker_d80eb0c3e31ccac5849d2f1b6bbddb82 = L.circleMarker(
+                [12.9251014, 77.5621732],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_33564193df7687d5172f451810743eca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b48231d035ee855dca3ff47b5a53488f = $(`<div id="html_b48231d035ee855dca3ff47b5a53488f" style="width: 100.0%; height: 100.0%;">     <b>Keventers</b><br><br>     Rating: 3.7/5<br>     Cuisines: Desserts, Beverages, Ice Cream<br>     Cost for 2: 400     </div>`)[0];
+                popup_33564193df7687d5172f451810743eca.setContent(html_b48231d035ee855dca3ff47b5a53488f);
+            
+        
+
+        circle_marker_d80eb0c3e31ccac5849d2f1b6bbddb82.bindPopup(popup_33564193df7687d5172f451810743eca)
+        ;
+
+        
+    
+    
+            var circle_marker_a722c90d512a7cfa8a95cae58e622169 = L.circleMarker(
+                [12.9251014, 77.5621732],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_8afc90bb447779066a5ed5c502cd534c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ed1e039654f2731a33e8e753a21ed93 = $(`<div id="html_3ed1e039654f2731a33e8e753a21ed93" style="width: 100.0%; height: 100.0%;">     <b>Kwality Wall's Swirl's Happiness Station</b><br><br>     Rating: 2.9/5<br>     Cuisines: Ice Cream, Desserts<br>     Cost for 2: 200     </div>`)[0];
+                popup_8afc90bb447779066a5ed5c502cd534c.setContent(html_3ed1e039654f2731a33e8e753a21ed93);
+            
+        
+
+        circle_marker_a722c90d512a7cfa8a95cae58e622169.bindPopup(popup_8afc90bb447779066a5ed5c502cd534c)
+        ;
+
+        
+    
+    
+            var circle_marker_03f6fd107c8241d17842c2d0a0162c03 = L.circleMarker(
+                [12.9244549, 77.5650085],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_3e3188bc7d55cb205ada9cb9f557086a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c7d69d1fdc8a3f9afd85264b15a5d8cf = $(`<div id="html_c7d69d1fdc8a3f9afd85264b15a5d8cf" style="width: 100.0%; height: 100.0%;">     <b>Waffle-A-Go Go</b><br><br>     Rating: 3.9/5<br>     Cuisines: Fast Food, Desserts, Ice Cream<br>     Cost for 2: 400     </div>`)[0];
+                popup_3e3188bc7d55cb205ada9cb9f557086a.setContent(html_c7d69d1fdc8a3f9afd85264b15a5d8cf);
+            
+        
+
+        circle_marker_03f6fd107c8241d17842c2d0a0162c03.bindPopup(popup_3e3188bc7d55cb205ada9cb9f557086a)
+        ;
+
+        
+    
+    
+            var circle_marker_17262c12af6b42bba429f7dc5b2a35f7 = L.circleMarker(
+                [12.943658, 77.5698444],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_b88dda1e0f621f71cb7b733052cfab6b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02e3de7836df07293ab6d58c05f31c0b = $(`<div id="html_02e3de7836df07293ab6d58c05f31c0b" style="width: 100.0%; height: 100.0%;">     <b>Asha Sweets Centre</b><br><br>     Rating: 3.6/5<br>     Cuisines: Fast Food<br>     Cost for 2: 250     </div>`)[0];
+                popup_b88dda1e0f621f71cb7b733052cfab6b.setContent(html_02e3de7836df07293ab6d58c05f31c0b);
+            
+        
+
+        circle_marker_17262c12af6b42bba429f7dc5b2a35f7.bindPopup(popup_b88dda1e0f621f71cb7b733052cfab6b)
+        ;
+
+        
+    
+    
+            var circle_marker_895ea496cdde87449c88110b37e96686 = L.circleMarker(
+                [12.9243553, 77.5648981],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_7b526128f564a1620dc2baad360fa29a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8d70b4519648df9f6739167d8e9c93d0 = $(`<div id="html_8d70b4519648df9f6739167d8e9c93d0" style="width: 100.0%; height: 100.0%;">     <b>Vinny's</b><br><br>     Rating: 4.2/5<br>     Cuisines: Pizza, Italian, Continental, Desserts<br>     Cost for 2: 800     </div>`)[0];
+                popup_7b526128f564a1620dc2baad360fa29a.setContent(html_8d70b4519648df9f6739167d8e9c93d0);
+            
+        
+
+        circle_marker_895ea496cdde87449c88110b37e96686.bindPopup(popup_7b526128f564a1620dc2baad360fa29a)
+        ;
+
+        
+    
+    
+            var circle_marker_42196c6bc95f3bd0b8dc9e9acbd0108b = L.circleMarker(
+                [12.8835602, 77.5140959],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_89155e573c6b97a376bcaeff04c3c93e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e355cd06f66485eb73c17679eacd271d = $(`<div id="html_e355cd06f66485eb73c17679eacd271d" style="width: 100.0%; height: 100.0%;">     <b>The Coffee Shack</b><br><br>     Rating: 4.2/5<br>     Cuisines: Cafe, Chinese, Continental, Italian<br>     Cost for 2: 500     </div>`)[0];
+                popup_89155e573c6b97a376bcaeff04c3c93e.setContent(html_e355cd06f66485eb73c17679eacd271d);
+            
+        
+
+        circle_marker_42196c6bc95f3bd0b8dc9e9acbd0108b.bindPopup(popup_89155e573c6b97a376bcaeff04c3c93e)
+        ;
+
+        
+    
+    
+            var circle_marker_c6d989a701104b192c146cee2861c158 = L.circleMarker(
+                [12.935393, 77.5453331],
+                {"bubblingMouseEvents": true, "color": "#e74c3c", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e74c3c", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca);
+        
+    
+        var popup_cad576b9634f9dabffbe554da6c25b42 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6d75feffd09ed755df0f177907e6beff = $(`<div id="html_6d75feffd09ed755df0f177907e6beff" style="width: 100.0%; height: 100.0%;">     <b>Vaishali Deluxe</b><br><br>     Rating: 3.8/5<br>     Cuisines: North Indian, Chinese<br>     Cost for 2: 700     </div>`)[0];
+                popup_cad576b9634f9dabffbe554da6c25b42.setContent(html_6d75feffd09ed755df0f177907e6beff);
+            
+        
+
+        circle_marker_c6d989a701104b192c146cee2861c158.bindPopup(popup_cad576b9634f9dabffbe554da6c25b42)
+        ;
+
+        
+    
+    
+            marker_cluster_c9e5e20eaa8bc96f36bfbf314ac598ca.addTo(map_fbcda5c63b36deb2c8b22e34563bd8ff);
+        
+</script>
+</html>
