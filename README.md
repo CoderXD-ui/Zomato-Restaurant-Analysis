@@ -39,4 +39,6 @@ plt.show()```
 1. Clone this repository.
 2. Download Zomato data and place it in the project folder.
 3. Install required libraries: pip install pandas matplotlib scikit-learn.
-4. Run the provided Jupyter Notebook or explore the Python scripts. 
+4. Run the provided Jupyter Notebook or explore the Python scripts.
+5. <img width="1000" height="500" alt="image" src="https://github.com/user-attachments/assets/1c26cf53-27cd-425c-ab72-687238d00084" />
+
